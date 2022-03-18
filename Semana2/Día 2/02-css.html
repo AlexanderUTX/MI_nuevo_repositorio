@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 2. agregar una etiqueta style, tampoco es recomendable -->
+	<style>
+		footer {
+			background: blueviolet;
+			color:white;
+			font-family: Arial;
+		}
+	</style>
+	<!-- 3. hacer un link a una hoja de estilos -->
+	<link rel="stylesheet" href="./02-css.css" >
+</head>
+<body>
+	<header>
+		<!-- 1. Estilos en Línea, no es recomendable -->
+		<h1 
+			style="color:red; background:lightblue"
+		>
+			Estilos CSS
+		</h1>
+	</header>
+	<main>
+		<!-- class un identificado que puedo utilizar para uno o más elementos -->
+		<p class="parrafo" id="primero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, omnis?</p>
+		<p class="parrafo importante">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, omnis?</p>
+		<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, omnis?</p>
+		<div class="parrafo">
+			Lorem ipsum dolor sit amet.
+		</div>
+	</main>
+	<footer>
+		<div>
+			<h2>Contáctenos</h2>
+			<address>Av. Dolores</address>
+		</div>
+	</footer>
+</body>
+</html>

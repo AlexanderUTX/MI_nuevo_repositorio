@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario de Registro</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Datos Principales</h2>
+                <!-- form: sirve como envoltura para los elementos input-->
+                <form>
+                    <label for="nombres">Nombres:</label>
+                    <input 
+						type="text" 
+						placeholder="Ingresa tus nombres" 
+						id="nombres"
+						required
+						minlength="2"
+						maxlength="10"
+					>
+                    <br>
+                    <label>Apellidos:</label>
+					<!-- regex, patrones regulares -->
+                    <input 
+						type="text" 
+						placeholder="Ingrese sus apellidos"
+						required
+						pattern="[a-z]{1,}"
+					>
+					<br>
+					<label>email:</label>
+					<input 
+						type="email"
+						placeholder="ingrese su correo"
+					>
+					<br>
+					<label for="contrasena">
+						Contraseña:
+					</label>
+					<input 
+						type="password"
+						placeholder="Ingrese una contraseña segura"
+						id="contrasena"
+					>
+					<br>
+					<label for="edad">
+						Edad:
+					</label>
+					<input 
+						type="number"
+						placeholder="Ingresa tu edad"
+						id="edad"
+					>
+					<br>
+					<!--  -->
+					<label>Género</label>
+					<br>
+					<input
+						type="radio"
+						name="genero"
+						value="M"
+						id="rmasculino"
+					>
+					<label for="rmasculino">
+						Masculino
+					</label>
+					<br>
+					<input
+						type="radio"
+						name="genero"
+						value="F"
+					>Femenino
+					<br>
+					<input
+						type="radio"
+						name="genero"
+						value="ND"
+					>Prefiero no divulgarlo
+					<!--  -->
+					<br>
+					<label>Intereses</label>
+					<br>
+					<input 
+						type="checkbox"
+						value="musica"
+					>Escuchar música
+					<input 
+						type="checkbox"
+						value="memes"
+						disabled
+					>Ver memes
+					<input 
+						type="checkbox"
+						value="cocinar"
+					>Cocinar
+					<input 
+						type="checkbox"
+						value="ejercicio"
+					>Hacer ejercicio
+					<input 
+						type="checkbox"
+						value="peliculas"
+					>Ver películas
+					<input 
+						type="checkbox"
+						value="programar"
+					>Hacer proyectitos
+					<input 
+						type="checkbox"
+						value="leer"
+					>Leer
+					<!--  -->
+					<br>
+					<label>Ciudad</label>
+					<br>
+					<select>
+						<option
+							selected
+							disabled
+						>
+							Selecciona una opción
+						</option>
+						<option value="AM">
+							Amazonas
+						</option>
+						<option value="AR">
+							Arequipa
+						</option>
+						<option value="AP">
+							Apurimac
+						</option>
+						<option value="CU">
+							Cusco
+						</option>
+						<option value="LI">
+							Lima
+						</option>
+						<option value="AY">
+							Ayacucho
+						</option>
+						<option value="AN">
+							Ancash
+						</option>
+						<option value="LA">
+							Lambayeque
+						</option>
+						<option value="HU">
+							Huánuco
+						</option>
+					</select>
+					<!--  -->
+					<br>
+					<label>Distritos</label>
+					<br>
+					<input list="distritos">
+					<datalist id="distritos">
+						<option value="Lima">
+							Lima
+						</option>
+						<option value="Pueblo Libre">
+							Pueblo Libre
+						</option>
+						<option value="Jesús Maria">
+							Distrito Jesús Maria
+						</option>
+						<option value="Lince">
+							Lince
+						</option>
+					</datalist>
+					<!--  -->
+					<br>
+					<label>
+						Fecha de Nacimiento
+					</label>
+					<input type="date">
+					<br>
+					<label>Color favorito</label>
+					<input type="color">
+					<!-- importante -->
+					<hr>
+					<input type="reset" value="Limpiar">
+					<!-- la acción de ejecutar una petición se llama submit, valida y envia datos -->
+					<input type="submit"
+					value="Guardar Formulario">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
