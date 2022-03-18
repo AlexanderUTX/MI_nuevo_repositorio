@@ -1,0 +1,39 @@
+/* Selector especial asterisco "*" que selecciona a todos los elementos */
+*{
+    border: 1px dotted red;
+}
+/* html {
+    /* font-size: 10px; */
+    /* Valor por defecto de un font-size//tamaño de fuente de html es 16px 
+} */
+header{
+/* el "width" es el ancho de cierta caja */
+    max-width: 300px;
+/* el "height" es la altura de cierta caja */
+    height: 200px;
+/* el "max-width" es el ancho maximo que puede tener cierto contenedor */
+    /* max-width: 300px; */
+}
+h1{
+    color: red;
+/* Cuando utilizamos peorcentajes "%" utilizar como referencia el contenedor padre */
+    width: 50%;
+}
+p{
+/* El "rem"hace referencia al contenedor mas lejano, en este caso seria el contenedor HTML*/
+    font-size: 1rem;
+    padding: 1rem;
+}
+section{
+    font-size: 50px;
+    width: 350px;
+}
+h3{
+/* El "em" hace referencia a la medida de su padre en este caso el padre de h3 es section */
+    font-size: 0.5em;
+    padding: 1  em;
+}
+h3{
+   /* el cuarto valor es la transparencia */
+   color: rgb(25, 0, 255, 0.5);
+}

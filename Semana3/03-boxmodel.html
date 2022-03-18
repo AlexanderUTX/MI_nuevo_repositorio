@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid red;
+            padding: 0;
+            margin: 0;
+            /* "box-sizing: border-box;" las cajas de los elementos HTML van a medirse a base al borde */
+            box-sizing: border-box;
+        }
+        h1{
+            width: 300px;
+            padding: 10px;
+        }
+        label{
+            display: block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titulo</h1>
+        <h2>Subtitulo</h2>
+    </header>
+    <main>
+        <section>
+            <h2>Titulo sección</h2>
+            <p>Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing.</p>
+        </section>
+        <section>
+            <h2>Titulo Seccion 2</h2>
+            <label>Correo</label>
+            <input type="email">
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* Cuando uso < hago referencia a los hijos */
+ol > li{
+    color: purple;
+}
+
+ul > li{
+    color: orangered;
+}
+.heading h1 {
+    background-color: aquamarine;
+}
+.textos p {
+    color: blueviolet;
+}
+.textos > p{
+    background-color: chocolate
+    ;
+}
+/* "nth-of-type"es para que los impares de tr tengan esta propiedad */
+/* EL "odd" es para impares y EL "even" es para pares */
+tbody tr:nth-of-type(odd) { 
+    background-color: lightgray;
+}
+tbody tr:nth-of-type(even){
+    background: gray;
+}
+/* Para efectos de paso del cursor sobre algo se usa "hover" */
+tbody tr:hover {
+    background-color: lightblue;
+/* el efecto "cursor:pointer" hace que cuando pases el cursor se como una manito */
+    cursor: pointer;
+}
