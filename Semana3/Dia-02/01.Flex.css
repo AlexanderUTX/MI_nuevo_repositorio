@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+.menu{
+    height: 450px;
+    background-color: aquamarine;
+    /* flex hace que muevas lo que esta en vertical a horizontal */
+    display: flex;    
+    flex-direction: row;/* row es alineacion horizontal */
+    /* todo lo de abajo depende de la direccion de flex para que sea segun esa instruccion de flex */
+    /* space-around hace que se separe en espacio iguales */
+    /* space-between lo mismo que el anterior solo que ignoria los espacios laterales */
+    /* space-evenly lo mismo que los demas pero con la diferencia de que los laterales si son iguales a los del centro y no como en space-around */
+    justify-content: space-evenly;/* justify-content hace que se acomode o distribuye segun el tamaño */
+    align-items: center;/* alinea segun la direccion de orientacion */
+    /* flex-wrap: wrap; */
+}
+.link{
+    background-color: steelblue;
+    color: white;
+    height: 50px;
+    width: 100px;
+    /* la explicacion del shrink esta en la linea 41 aprox, lo que hace el shrink con valor 0 es que mantiene el tamaño igual aunque se encoja todo es como un candado al tamaño */
+    /* flex-shrink: 0; */
+}
+/* nth-of-type es para escoger a uno y cambiar solo a ese y no a todo lo demas */
+.link:nth-of-type(3){
+    background-color: red;
+    /* grow significa crecer en base al espacio fraccionando el espacio que hay en total y repartiendolo en los contenedore seleccionados, es decir que si tenemos 1000 de espacio libre y pongo de grow 2 y a otro 3 usara 2 partes de 1000 que son 400 y lo pondra al primero y 600 al segundo */
+    /* flex-grow: 4; */
+}
+.link:nth-of-type(5){
+    background-color: purple;
+    /* flex-grow: 1; */
+}
+.link:nth-of-type(2){
+    background-color: green;
+    /* shrink es encoger asumiendo el espacio faltante y hace que los elementos se encojan */
+    flex-shrink: 4;
+}

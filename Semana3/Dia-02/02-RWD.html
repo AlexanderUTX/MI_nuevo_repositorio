@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            height: 50vh;
+            width: 50vw;
+            border: 3px solid red;
+        }
+        .titulares, .noticia{
+            border: 2px solid blue;
+        }
+        .titulares{
+            display: flex;
+            justify-content: space-between;
+        }
+        /* esto es para que pase lo que quieras cuando el tamaño del dispositivo llegue a la condicional que pusiste */
+        /* el "screen" se refiere a pantallas porque tambien hay tv */
+        @media screen and (max-width:768px){
+            h1{
+                background-color: red;
+            }
+            .titulares{
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width:576px){
+            h1{
+                background-color: blue;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titulo</h1>
+    </header>
+    <main>
+        <section class="titulares">
+            <div class="noticia">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="noticia">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="noticia">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
