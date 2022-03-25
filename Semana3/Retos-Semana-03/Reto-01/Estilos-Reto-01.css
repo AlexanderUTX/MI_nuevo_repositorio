@@ -2,7 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 2px solid none;
 }
-.principal{
+.main{
     max-width: 650px;
+    height: 1000px;
+}
+.papa{
+    width:600px;
+    height: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.hijo{
+    background-color: #0d1c23;
+    width:100px;
+    padding-top: 38px;
+    height: 115px;
+    margin:5px;
+    color:#88BCD2;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hermano{
+    width:600px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.sobrino{
+    width: 75px;
+    height: 75px;
+    padding-top: 20px;
+    margin:5px;
+    background-color: #88BCD2;
+    color:#0D1C22;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
