@@ -5,10 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="01-Proyectito.css">
 </head>
 <body>
+    <header>
+        <div class="filtro-header"></div>
+        <div class="contenedor">
+            <nav class="menu-principal"><!-- para la barra de navegacion superior principal -->               
+                <ul class="links">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Partners</a></li>
+                </ul>
+                <img src="./img/codigo_logo.png" alt="logo" class="logo">
+                <ul class="social">
+                    <li>
+                        <a href="">
+                            <img src="./img/facebook_icon.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/twitter_icon.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/linkedin_icon.png" alt="linkedin_icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contenido-header">
+                <h1>
+                    Aprender a dominar el lenguaje digital con Códigó
+                </h1>
+                <h4>
+                    Encuentra todo lo necesario para aprender a programar en todos nuestros Bootcamps
+                </h4>
+                <button>
+                    Conocenos
+                </button>
+            </div>
+        </div>
+        <img src="./img/wave.svg" alt="onda" class="onda">
+    </header>
     <main>
+        <div class="contenedor">
+			<section class="conocenos">
+				<h2>Conócenos</h2>
+				<h4>Clases en vivo, materiales, todo en un Bootcamp para ser un Desarrollador FullStack</h4>
+				<div class="caracteristicas">
+					<div class="tarjeta">
+						<img src="./img/icon1.png" alt="icono">
+						<h5>Aprende Programación!</h5>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel sed, non similique perferendis eius ea expedita necessitatibus quo accusantium magnam natus, corrupti facere reiciendis vero debitis architecto modi quos.
+						</p>
+					</div>
+					<div class="tarjeta">
+						<img src="./img/icon2.png" alt="icono2">
+						<h5>Trabaja con Data Real</h5>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel sed, non similique perferendis eius ea expedita necessitatibus quo accusantium magnam natus, corrupti facere reiciendis vero debitis architecto modi quos.
+						</p>
+					</div>
+					<div class="tarjeta">
+						<img src="./img/icon3.png" alt="icono3">
+						<h5>Diseña Interfaces</h5>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel sed, non similique perferendis eius ea expedita necessitatibus quo accusantium magnam natus, corrupti facere reiciendis vero debitis architecto modi quos.
+						</p>
+					</div>
+				</div>
+                <iframe id="video-youtube" width="700" height="400" src="https://www.youtube.com/embed/NLOp_6uPccQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+		</div>
         <div class="contenedor">
             <section class="lenguajes">
                 <div class="lenguajes-texto">
@@ -25,6 +100,20 @@
                 <div class="lenguajes-imagen">
                     <img src="./img/pc.png" alt="pc" class="pc">
                 </div>
+            </section>
+        </div>
+        <div class="contenedor">
+            <section class="registro">
+                <h2>
+                    Registrece para recibir información
+                </h2>
+                <p>Ingrese su correo</p>
+                <form>
+                    <input type="email" placeholder="Ejem. usuario@dominio.com">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </form>
             </section>
         </div>
     </main>

@@ -1,0 +1,37 @@
+.cajita{
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+    background-color: lightseagreen;
+    /* las propiedades de transicion afectan a todos */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 500ms;
+    /* acelerar la transicion pero en el medio del tiempo, osea comienza y termina en le mismo tiempo pero puede acelerar al prinipio ofinal o en el medio pero siempre durando lo mismo*/
+    transition-timing-function: ease-in-out;
+
+}
+.cajita:hover{
+    background-color: purple;
+    border-radius: 50%;
+    /* para transformar */
+    /* el "SCALE" es para agrandar por porcentaje */
+    /* el "TRANSALATE" sirve para trasladarlo translate(X, Y)*/
+    /* el skew hace que se incline segun los grados que desees */
+    /* el rotate gira los grados que desees */
+    transform: skewX(35deg);
+}
+#imagen{
+    width: 700px;
+    opacity: 0.5;
+}
+#imagen:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    /* para pner sombreado box-shadow: ejeX ejeY Tamaño Color; */
+    box-shadow: 0 0 10px steelblue;
+    transition-property: all;
+    transition-duration: 2s;
+    transform: translate(100px, 100px);
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+}
