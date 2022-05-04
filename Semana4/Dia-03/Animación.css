@@ -1,0 +1,42 @@
+body{
+    /* background-color: black; */
+    background-image: url("https://img.freepik.com/vector-gratis/patron-espacio-transparente-color_102902-2360.jpg") ;
+}
+.nave{
+    width: 150px;
+    animation-name: volar;
+    animation-duration: 5s;
+    /* esto dice que se ejecute siempre */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    /* animation-direction: reverse; */
+}
+@keyframes volar{
+    0%{
+        transform: translate(0,0) scaleX(-1);
+    }
+    20%{
+        transform: translate(950px,0) scaleX(-1);
+    }
+    25%{
+        transform: translate(1000px,0) scaleX(-1) rotate(-90deg) ;
+    }
+    45%{
+        transform: translate(1000px,950px)scaleX(-1)rotate(-90deg);
+    }
+    50%{
+        transform: translate(1000px,1000px) rotate(0deg);
+    }
+    70%{
+        transform: translate(50px,1000px) rotate(0deg);
+    }
+    75%{
+        transform: translate(0px,1000px) rotate(90deg);
+    }
+    95%{
+        transform: translate(0px,50px) rotate(90deg);
+    }
+    100%{
+        transform: translate(0px,0px) scaleX(-1) rotate(0deg);
+    }
+}
